@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - go get -v
+  build:
+    commands:
+      - go build -v
+      - go test -v
+
+artifacts:
+  files:
+    - platform-proxy-aws-server
+    
